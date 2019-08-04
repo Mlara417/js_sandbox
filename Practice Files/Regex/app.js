@@ -29,6 +29,21 @@ re = /Hel{2,}o/i; //Must occur at least (m) times
 //parentheses () - Grouping
 re = /^([0-9]x){3}$/; //Must be exactly 3x 3 times
 
+//Shorthand character classes
+re = /\w/; // Word character - alphanumeric or _
+re = /\w+/; // + = one or more
+re = /\W/; // Non-word character
+re = /\d/; // match any digit
+re = /\d+/; // match any digit 0 or more times
+re = /\D/; // match any non-digit
+re = /\s/;  //match whitespace char
+re = /\S/;  //match non-whitespace char
+re = /Hell\b/i; // Word boundary
+
+//Assertions
+re = /x(?=y)/; //match x only if followed by y
+re = /x(?!y)/; //match x only if not followed by y
+
 //String to match
 const str = 'Hello';
 

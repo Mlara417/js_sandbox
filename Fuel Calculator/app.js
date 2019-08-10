@@ -29,7 +29,7 @@ function calculateResults(){
     const differencePerYearResults = tradeInAnnualFuelCostResults - newVehicleFuelCostResults;
     const differencePerMonthResults = differencePerYearResults / 12;
 
-    if(tradeInRating) {
+    if(tradeInRating.value > 0 && purchaseRating.value > 0 && miles.value > 0 && costPerGallon.value > 0) {
         annualFuelCost.value = tradeInAnnualFuelCostResults.toFixed(2);
         newVehicleFuelCost.value = newVehicleFuelCostResults.toFixed(2);
         differencePerYear.value = differencePerYearResults.toFixed(2);

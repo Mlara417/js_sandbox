@@ -13,6 +13,9 @@
         #loading, #results{
             display:none;
         }
+        .input-group-addon{
+            font-size: 0.85em;
+        }
     </style>
   </head>
   <body class="bg-dark">
@@ -45,7 +48,7 @@
                     <div class="form-group">
                         <div class="input-group">
                                 <span class="input-group-addon pr-2 pt-2">Fuel</span>
-                                <input type="number" class="form-control" id="costPerGallon" placeholder="Cost Per Gallon">
+                                <input type="number" step="0.01" class="form-control" id="costPerGallon" placeholder="Cost Per Gallon">
                         </div>
                     </div>
                         <div class="form-group">
